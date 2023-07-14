@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+::-moz-selection {
+    background: #fcfcfc;
+    background: rgba(255, 255, 255, .2);
+    text-shadow: none;
+}
+
+::selection {
+    background: #fcfcfc;
+    background: #ffffff33;
+    text-shadow: none;
+}
+
+img {
+    user-select: none;
+    z-index: 100;
+    -webkit-user-drag: none;
+}
+
+button {
+    user-select: none;
+    z-index: 130;
+}
+
+.display-none {
+    @apply hidden;
+}

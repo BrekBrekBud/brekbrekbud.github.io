@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from mysticdev.us/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Jul 2023 11:27:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../kit.fontawesome.com/cc95a7d932.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+  <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link href="../cdn.jsdelivr.net/npm/%40sweetalert2/theme-dark%404/dark.css" rel="stylesheet">
+  <script src="../cdn.jsdelivr.net/npm/sweetalert2%4011/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="index.html">
+  <script src="index.html"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.tailwindcss.com/"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1a2234',
+            secondary: '#111827',
+            cardbg: '#1d273b',
+            loginbutton: '#0548AE',
+            buttons: '#2C2F33',
+          },
+          screens: {
+            'sm': '640px',
+            'md': '768px',
+            'lg': '1024px',
+            'xl': '1280px',
+            '2xl': '1536px',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style type="text/tailwindcss">
+    @layer utilities {
+    
+    .fillanimationdiscord {
+        background: linear-gradient(to right, #053d7c 50%, #0548AE 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+      }   
+
+      .fillanimationdiscord:hover {
+        background-position: left bottom;
+      }
+
+      .fillanimbuy {
+        background: linear-gradient(to right, #053d7c 50%, #0548AE 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+      }
+
+      .fillanimbuy:hover {
+        background-position: left bottom;
+      }
+
+      .fillanim {
+        background: linear-gradient(to right, #226322 50%, #279127 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+      }
+
+      .fillanim:hover {
+        background-position: left bottom;
+      }
+
+  }
+  </style>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="img/logo.png">
+  <meta name="description" content="Orient Development page, here you can download or buy the products and more.">
+  <title>Orient Development</title>
+</head>
+
+<body class="bg-primary text-white">
+
+  
+  <div class="flex flex-col justify-center items-center h-screen">
+    <img class="animate-pulse mb-10" width="350" height="350" src="img/logo.png">
+    <div class="bg-cardbg p-6 rounded-lg flex flex-col justify-center border border-solid border-gray-500">
+      <h1 class="text-white font-semibold text-3xl">Welcome to Orient Dev!</h1>
+      <p class="text-gray-400 text-center text-xl">Sign In to your account</p>
+      <br>
+      <a class="text-center" href="https://discord.com/api/oauth2/authorize?response_type=code&amp;redirect_uri=https%3A%2F%2Forientdev.us%2Flogin&amp;scope=identify%20guilds%20guilds.join&amp;client_id=1077799380070969394">
+        <button class="bg-loginbutton text-white text-xl rounded-md px-20 py-2 text-center fillanimationdiscord" type="button">
+          <i class="text-white fa-brands fa-discord"></i> Discord
+        </button>
+      </a>
+    </div>
+  </div>
+  
+
+</body>
+
+<script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+  async function buyProduct(product) {
+
+    Swal.mixin({
+      toast: true,
+      position: 'bottom-start',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (a) => {
+        a.addEventListener("mouseenter", Swal.stopTimer);
+        a.addEventListener("mouseleave", Swal.resumeTimer);
+      },
+    }).fire({
+      icon: "error",
+      title: "You must be logged in to do this.",
+    });
+  }
+</script>
+
+
+
+<!-- Mirrored from mysticdev.us/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Jul 2023 11:27:50 GMT -->
+</html>
