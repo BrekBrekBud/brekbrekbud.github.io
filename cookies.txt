@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+orientmc.net	TRUE	/	FALSE	1999999999	token	s%3AU1x2VTswSPUjfawRkBNHCo5l04p0NGqm.j7KRJomktfQ4FVjkWFlRa7ZXoC5E9FNwz%2B6lmiX71B8
+
